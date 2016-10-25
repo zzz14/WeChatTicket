@@ -467,7 +467,7 @@
             locals.status = 1;
             locals.processResult = '';
             render();
-            api.post(form.attr('action'), data, function (id) {
+            api.post(form.attr('action'), locals.activity, function (id) {
                 if (urlParam.create) {
                     locals.activity.id = id;
                 }
